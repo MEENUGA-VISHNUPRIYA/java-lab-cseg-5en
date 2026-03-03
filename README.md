@@ -468,3 +468,65 @@ public class TestFigure {
 ```
 ## Output:
 ![Output for 4c](https://github.com/MEENUGA-VISHNUPRIYA/java-lab-cseg-5en/blob/020b5fa552c82ee789b9c4a3eb39739ad6c75260/4c.png)
+## Title:5a(Implementing Interface)
+```
+interface Sortable{
+  void sort(int [] arr);
+  }
+class Bubblesort implements Sortable{
+  public void sort(int [] arr){
+   int size =arr.length;
+   int temp=0;
+   for(int i=0;i<size-1;i++){
+    for(int j=0;j<size-i-1;j++){
+      if(arr[j]>arr[j+1]){
+         temp=arr[j];
+         arr[j]=arr[i];
+         arr[i]=temp;
+          }
+       }
+     }
+  }
+}
+class Selectionsort implements Sortable {
+   public void sort (int [] arr){
+    int size=arr.length;
+    int minindex=0;
+    int min;
+    for(int i=0;i<size;i++){
+      min =arr[i];
+     for(int j=i+1;j<size;j++){
+       if(min>arr[j]){
+          min=arr[j];
+          minindex=j;
+         }
+       }
+     arr[i]=min;
+    }
+   }
+ }
+class Testsort {
+    static void display(int arr[]) {
+        for (int ele : arr) {
+            System.out.print(ele + ", ");
+        }
+        System.out.println();
+    }
+    public static void main(String args[]) {
+        int arr1[] = {9, 7, 4, 3, 6, 8};
+        int arr2[] = {8, 6, 3, 4, 7, 9};
+        Sortable s;
+        s = new Bubblesort();
+        s.sort(arr1);
+        System.out.println("After Bubble Sort:");
+        display(arr1);
+
+        s = new Selectionsort();
+        s.sort(arr2);
+        System.out.println("After Selection Sort:");
+        display(arr2);
+    }
+}
+```
+## Output:
+![Output for 5a](
