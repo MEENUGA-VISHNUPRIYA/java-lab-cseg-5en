@@ -560,4 +560,20 @@ class TestVehicle{
 }
 ```
 ## Output:
-![Output for 5b](
+![Output for 5b](https://github.com/MEENUGA-VISHNUPRIYA/java-lab-cseg-5en/blob/cff8a9493736b8c12622b230b453e1004f2606dd/5b.png)
+## Title:5c(Implementing String Buffer)
+```
+class Deletechar{
+  public static void main(String args[]){
+    StringBuffer sb =new StringBuffer("java programming");
+    System.out.println(sb);
+    sb.deleteCharAt(4);
+    System.out.println(sb);
+    sb.delete(0,4);
+    System.out.println(sb);
+
+   }
+}
+```
+## Output:
+![Output for 5c](
