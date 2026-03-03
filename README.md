@@ -65,4 +65,4 @@ class Quadraticequation{
    }
 ```
 ## Output:
-![Output for 1a](
+![Output for 1a](https://github.com/MEENUGA-VISHNUPRIYA/java-lab-cseg-5en/blob/16ecb47b5d7744b44e9ac59bebfb9bc3bacdb214/1a.png)
