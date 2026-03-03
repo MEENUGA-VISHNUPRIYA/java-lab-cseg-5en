@@ -201,4 +201,35 @@ class main{
 }
 ```
 ## Output:
-![Output for addexp 2](
+![Output for addexp 2](https://github.com/MEENUGA-VISHNUPRIYA/java-lab-cseg-5en/blob/4b74aefac99961b5c506b2cdd9eeebd31d173cd9/addexp-2.png)
+## Title:3a(Implement Constructor Overload)
+```
+class student{
+ String name;
+ int age;
+ double marks;
+ student(){
+ }
+ student(String name,int age,double marks){
+  this.name=name;
+  this.age=age;
+  this.marks=marks;
+}
+void display(){
+  System.out.println("name:"+name);
+  System.out.println("age:"+age);
+  System.out.println("marks:"+marks);
+  }
+}
+
+class main{
+ public static void main(String args[]){
+   student std= new student();
+   std.display();
+   student std1=new student ("sree",19,60);
+   std1.display();
+ }
+}`
+```
+## Output:
+![Output for 3a](
