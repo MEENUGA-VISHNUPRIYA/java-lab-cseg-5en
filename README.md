@@ -92,7 +92,7 @@ class main{
 ```
 ## Output:
 ![Output for 2a](https://github.com/MEENUGA-VISHNUPRIYA/java-lab-cseg-5en/blob/8fabdba666381491eddfc334b43eb37279bc0ff2/2a.png)
-## Title 2b(Implementing overloading method)
+## Title:2b(Implementing overloading method)
 ```
 class sum{
   int sum(int a ,int b){
@@ -115,4 +115,30 @@ class main{
 }
 ```
 ## Output:
-![Output for 2b](
+![Output for 2b](https://github.com/MEENUGA-VISHNUPRIYA/java-lab-cseg-5en/blob/2560466f9fa3c408b9a5167c5f69a544f9ea4532/2b.png)
+## Title:2c(Implement Constructor)
+```
+class student{
+ String sname;
+ int sage;
+ double smarks;
+ student(String name,int age,double marks){
+   sname=name;
+   sage=age;
+   smarks=marks;
+  }
+ void display(){
+  System.out.println("student name is :"+sname);
+  System.out.println("student age is :"+sage);
+  System.out.println("stduent marks is:"+smarks);
+  }
+}
+class main{
+ public static void main(String args[]){
+  student std= new student("sree",12,960);
+  std.display();
+  }
+}
+```
+## Output:
+![Output for 2c](
