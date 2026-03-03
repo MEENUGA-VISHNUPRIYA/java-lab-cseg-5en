@@ -229,7 +229,68 @@ class main{
    student std1=new student ("sree",19,60);
    std1.display();
  }
-}`
+}
 ```
 ## Output:
-![Output for 3a](
+![Output for 3a](https://github.com/MEENUGA-VISHNUPRIYA/java-lab-cseg-5en/blob/108293e4bd5ecb235d279dcfbc3ab3b3bfbc6ecb/3a.png)
+## Title:3b(Implement Binary Search)
+```
+import java.util.Scanner;
+class Binary {
+    int list[];
+    int size;
+    Binary(int size) {
+        this.size = size;
+        list = new int[size];
+    }
+    void setList() {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter items in ascending order:");
+        for (int i = 0; i < size; i++) {
+            System.out.println("Enter value of " + (i + 1) + ":");
+            list[i] = sc.nextInt();
+        }
+    }
+    void getList() {
+        System.out.println("List elements:");
+        for (int i = 0; i < size; i++) {
+            System.out.print(list[i] + " ");
+        }
+        System.out.println();
+    }
+    int binary(int key) {
+        int low = 0;
+        int high = size - 1;
+        while (low <= high) {
+            int mid = (low + high) / 2;
+            if (list[mid] == key)
+                return mid;
+            else if (list[mid] < key)
+                low = mid + 1;
+            else
+                high = mid - 1;
+        }
+        return -1;
+    }
+}
+class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter size of list:");
+        int size = sc.nextInt();
+        Binary b = new Binary(size);
+        b.setList();
+        b.getList();
+        System.out.println("Enter a key to search:");
+        int key = sc.nextInt();
+        int index = b.binary(key);
+        if (index == -1) {
+            System.out.println("Key item does not exist");
+        } else {
+            System.out.println("Key item exists at position: " + (index + 1));
+        }
+    }
+}
+```
+## Ouput:
+![Output for 3b](
