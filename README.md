@@ -576,4 +576,4 @@ class Deletechar{
 }
 ```
 ## Output:
-![Output for 5c](
+![Output for 5c](https://github.com/MEENUGA-VISHNUPRIYA/java-lab-cseg-5en/blob/98874520aecf764bcc8feb282d7077a7dc548853/5c.png)
