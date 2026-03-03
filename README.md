@@ -331,4 +331,50 @@ class Main {
 }
 ```
 ## Output:
-![Output for 3c](
+![Output for 3c](https://github.com/MEENUGA-VISHNUPRIYA/java-lab-cseg-5en/blob/2045e97fd4e245920de5cd875ed2692c347a41fd/3c.png)
+## Tilte:4a(Implement Single Inheritence)
+```
+class Person {
+    String name;
+    int age;
+
+    Person(String name, int age) {
+        this.name = name;
+        this.age = age;
+    }
+
+    void displayPersonDetails() {
+        System.out.println("Name: " + name);
+        System.out.println("Age: " + age);
+    }
+}
+
+class Employee extends Person {
+    double annualSalary;
+    int yearOfJoining;
+    String nationalInsuranceNumber;
+
+    Employee(String name, int age, double salary, int year, String nin) {
+        super(name, age);
+        annualSalary = salary;
+        yearOfJoining = year;
+        nationalInsuranceNumber = nin;
+    }
+
+    void displayEmployeeDetails() {
+        displayPersonDetails();
+        System.out.println("Annual Salary: " + annualSalary);
+        System.out.println("Year of Joining: " + yearOfJoining);
+        System.out.println("National Insurance Number: " + nationalInsuranceNumber);
+    }
+}
+
+public class TestEmployee {
+    public static void main(String[] args) {
+        Employee emp = new Employee("sree", 19, 60000, 2022, "NJ123456A");
+        emp.displayEmployeeDetails();
+    }
+}
+```
+## Output:
+![Output for 4a](
