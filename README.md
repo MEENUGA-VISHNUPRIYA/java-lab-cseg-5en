@@ -65,4 +65,30 @@ class Quadraticequation{
    }
 ```
 ## Output:
-![Output for 1a](https://github.com/MEENUGA-VISHNUPRIYA/java-lab-cseg-5en/blob/16ecb47b5d7744b44e9ac59bebfb9bc3bacdb214/1a.png)
+![Output for 1b](https://github.com/MEENUGA-VISHNUPRIYA/java-lab-cseg-5en/blob/16ecb47b5d7744b44e9ac59bebfb9bc3bacdb214/1a.png)
+## Title:2a(Implement class mechanism)
+```
+class Rectangle{
+  double l;
+  double b;
+  double area(){
+    return l*b;
+  }
+  double perimeter(){
+   return 2*(l+b);
+   }
+ }
+class main{
+  public static void main(String args[]){
+    Rectangle rect =new Rectangle();
+    rect.l=6;
+    rect.b=12;
+    double area = rect.area();
+    double perimeter =rect.perimeter();
+    System.out.println("area is:" +area);
+    System.out.println("perimeter is:" +perimeter);
+    }
+  }
+```
+## Output:
+![Output for 2a](
