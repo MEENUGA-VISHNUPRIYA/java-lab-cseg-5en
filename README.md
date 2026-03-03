@@ -91,4 +91,4 @@ class main{
   }
 ```
 ## Output:
-![Output for 2a](
+![Output for 2a](https://github.com/MEENUGA-VISHNUPRIYA/java-lab-cseg-5en/blob/8fabdba666381491eddfc334b43eb37279bc0ff2/2a.png)
