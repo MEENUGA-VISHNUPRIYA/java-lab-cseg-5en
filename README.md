@@ -529,4 +529,35 @@ class Testsort {
 }
 ```
 ## Output:
-![Output for 5a](
+![Output for 5a](https://github.com/MEENUGA-VISHNUPRIYA/java-lab-cseg-5en/blob/381dcef93d5047a092240df87f3a8510eac395b0/5a.png)
+## Title:5b(Polymorphism)
+```
+class Vehicle{
+    void run(){
+          System.out.println(" vechicle is running:");
+     }
+  }
+class car extends Vehicle{
+    void run(){
+           System.out.println("car is running :");
+      }
+  }
+class bike extends Vehicle{
+     void run(){
+       System.out.println("bike is running:");
+    }
+  }
+class TestVehicle{
+   public static void main(String args[]){
+     Vehicle v ;
+     v=new car();
+     v.run();
+     v=new bike();
+     v.run();
+     v=new Vehicle();
+     v.run();
+    }
+}
+```
+## Output:
+![Output for 5b](
