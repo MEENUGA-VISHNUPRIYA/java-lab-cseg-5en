@@ -749,4 +749,42 @@ class PalindromeCheck
 }
 ```
 ## Output:
-![Output for addexp-3](
+![Output for addexp-3](https://github.com/MEENUGA-VISHNUPRIYA/java-lab-cseg-5en/blob/55912a12083abd2a52e49243bd5994f77e0eb8b0/addexp-3.png)
+## Additional Experiment:4(checking a perfect number)
+```
+import java.util.Scanner;
+
+class PerfectNumber
+{
+    public static void main(String args[])
+    {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.println("Enter a number:");
+        int num = sc.nextInt();
+
+        int sum = 0;
+
+        for(int i = 1; i < num; i++)
+        {
+            if(num % i == 0)
+            {
+                sum = sum + i;
+            }
+        }
+
+        if(sum == num)
+        {
+            System.out.println(num + " is a perfect number");
+        }
+        else
+        {
+            System.out.println(num + " is not a perfect number");
+        }
+
+        sc.close();
+    }
+}
+```
+## Output:
+![Output for addexp-4](
