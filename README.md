@@ -678,7 +678,7 @@ class BuiltInException {
 ```
 ## Output:
 ![Output for 6c](https://github.com/MEENUGA-VISHNUPRIYA/java-lab-cseg-5en/blob/e13cea3d9462ad7c10b4c608f38e9fc04b07d9b5/6c.png)
-## Additional Experiment(Inserting substring into mainstring)
+## Additional Experiment:1(Inserting substring into mainstring)
 ```
 import java.util.Scanner;
 
@@ -713,4 +713,40 @@ class InsertSubstring {
 }
 ```
 ## Output:
-![Output foraddexp-1](
+![Output foraddexp-1](https://github.com/MEENUGA-VISHNUPRIYA/java-lab-cseg-5en/blob/a1e480a922a24cfd997fecadc26aac71ee98e197/addexp-1.png)
+## Additional experiment:3(Determining string is palindrome or not)
+```
+import java.util.Scanner;
+
+class PalindromeCheck
+{
+    public static void main(String args[])
+    {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.println("Enter a string:");
+        String str = sc.nextLine();
+
+        int start = 0;
+        int end = str.length() - 1;
+
+        while(start < end)
+        {
+            if(str.charAt(start) != str.charAt(end))
+            {
+                System.out.println("The string \"" + str + "\" is not a palindrome");
+                sc.close();
+                return;
+            }
+
+            start++;
+            end--;
+        }
+
+        System.out.println("The string \"" + str + "\" is a palindrome");
+        sc.close();
+    }
+}
+```
+## Output:
+![Output for addexp-3](
