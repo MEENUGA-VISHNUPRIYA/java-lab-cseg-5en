@@ -577,3 +577,29 @@ class Deletechar{
 ```
 ## Output:
 ![Output for 5c](https://github.com/MEENUGA-VISHNUPRIYA/java-lab-cseg-5en/blob/98874520aecf764bcc8feb282d7077a7dc548853/5c.png)
+## Title:6a(Exception Handling)
+```
+import java.util.Scanner;
+class ArrayIndexExceptionDemo {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter size of array: ");
+        int n = sc.nextInt();
+        int[] arr = new int[n];
+        System.out.println("Enter " + n + " elements:");
+        for (int i = 0; i < n; i++) {
+            arr[i] = sc.nextInt();
+        }
+        try {
+            System.out.print("Enter index to access: ");
+            int index = sc.nextInt();
+            System.out.println("Element at index " + index + " is " + arr[index]);
+        } catch (ArrayIndexOutOfBoundsException e) {
+            System.out.println("Array index out of bounds!");
+        }
+        sc.close();
+    }
+}
+```
+## Output:
+![Output for 6a](
