@@ -602,4 +602,43 @@ class ArrayIndexExceptionDemo {
 }
 ```
 ## Output:
-![Output for 6a](
+![Output for 6a](https://github.com/MEENUGA-VISHNUPRIYA/java-lab-cseg-5en/blob/d5b1ba929484cb9f0bb7f5f39e843220b223e41e/6a.png)
+## Title:6b(Implement Multiple catch Blocks)
+```
+import java.util.Scanner;
+
+class MultipleCatchDemo {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int[] arr = {10, 20, 30, 40, 50};
+
+        try {
+            System.out.print("Enter first number: ");
+            int a = sc.nextInt();
+
+            System.out.print("Enter second number: ");
+            int b = sc.nextInt();
+
+            int result = a / b;
+            System.out.println("Result = " + result);
+
+            System.out.print("Enter index to access array: ");
+            int index = sc.nextInt();
+            System.out.println("Element = " + arr[index]);
+        }
+        catch (ArithmeticException e) {
+            System.out.println("Arithmetic Exception occurred");
+        }
+        catch (ArrayIndexOutOfBoundsException e) {
+            System.out.println("Array Index Out Of Bounds Exception occurred");
+        }
+        catch (Exception e) {
+            System.out.println("Some other exception occurred");
+        }
+
+        sc.close();
+        System.out.println("Program continues...");
+    }
+```
+## Output:
+![Output for 6b](
