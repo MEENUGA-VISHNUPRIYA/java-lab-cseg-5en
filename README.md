@@ -675,4 +675,42 @@ class BuiltInException {
        }
    }
 }
-![Output for 6c](
+```
+## Output:
+![Output for 6c](https://github.com/MEENUGA-VISHNUPRIYA/java-lab-cseg-5en/blob/e13cea3d9462ad7c10b4c608f38e9fc04b07d9b5/6c.png)
+## Additional Experiment(Inserting substring into mainstring)
+```
+import java.util.Scanner;
+
+class InsertSubstring {
+    public static void main(String args[]) {
+
+        Scanner sc = new Scanner(System.in);
+
+        System.out.println("Enter a string:");
+        String mainString = sc.nextLine();
+
+        System.out.println("Substring:");
+        String subString = sc.nextLine();
+
+        System.out.println("Position:");
+        int position = sc.nextInt();
+
+        if (position < 0 || position > mainString.length()) {
+            System.out.println("Invalid position");
+        } 
+        else {
+            String firstpart = mainString.substring(0, position);
+            String secondpart = mainString.substring(position);
+
+            String resultstring = firstpart + subString + secondpart;
+
+            System.out.println("The resultant string = " + resultstring);
+        }
+
+        sc.close();
+    }
+}
+```
+## Output:
+![Output foraddexp-1](
