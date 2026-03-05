@@ -787,4 +787,4 @@ class PerfectNumber
 }
 ```
 ## Output:
-![Output for addexp-4](
+![Output for addexp-4](https://github.com/MEENUGA-VISHNUPRIYA/java-lab-cseg-5en/blob/19da4419e7fbad610e258322fe87976a1565a551/addexp-4.png)
