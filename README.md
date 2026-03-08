@@ -823,4 +823,101 @@ class UserRegion {
 }
 ```
 ## Output:
-![Output for 7a](
+![Output for 7a](https://github.com/MEENUGA-VISHNUPRIYA/java-lab-cseg-5en/blob/5c5649b88f596b0b7bbcb27322a8f09fb0ff8b3f/7a.png)
+## Title:7b(Creating threads by extending thread class)
+```
+class GoodMorningThread extends Thread {
+    public void run() {
+        while (true) {
+            System.out.println("Good Morning");
+            try {
+                Thread.sleep(1000); 
+            } catch (InterruptedException e) {
+                System.out.println(e);
+            }
+        }
+    }
+}
+  class HelloThread extends Thread {
+     public void run() {
+          while(true) {
+            System.out.println("Hello");
+         try {
+            Thread.sleep(2000);
+         }
+         catch(InterruptedException e) {
+               System.out.print(e);
+           }
+        }
+    }
+  }
+   class WelcomeThread extends Thread {
+         public void run() {
+          while(true) {
+        System.out.println("Welcome");
+         try {
+           Thread.sleep(3000);
+         }
+         catch(InterruptedException e) {
+         System.out.print(e);
+         }
+       }
+     }
+   }
+  class TestThreads {
+     public static void main(String args[]) {
+            GoodMorningThread t1 = new GoodMorningThread();
+            HelloThread t2 = new HelloThread();
+            WelcomeThread t3 = new WelcomeThread();
+
+
+            t1.start();
+            t2.start();
+            t3.start();
+           }
+         }
+```
+## Output:
+![Output for 7b](
+## Title:7c(Illustrating isAlive() and join())
+```
+class LongRunningTask extends Thread {
+        public void run() {
+      System.out.println("Long running task started...");
+      try {
+            for(int i=1;i<= 5;i++) {
+      System.out.println("Working..." +i);
+            Thread.sleep(1000);
+        }
+     }
+      catch(InterruptedException e) {
+       System.out.println(e);
+   }
+  System.out.println("Long running task completed!");
+      }
+     }
+public class ThreadDemo {
+    public static void main(String[] args) {
+
+        LongRunningTask task1 = new LongRunningTask();
+
+        System.out.println("Before starting task1: " + task1.isAlive());
+
+        task1.start();
+
+        System.out.println("After starting task1: " + task1.isAlive());
+
+        try {
+            System.out.println("Main thread waiting for task1 to complete using join()...");
+            task1.join();
+        } catch (InterruptedException e) {
+            System.out.println(e);
+        }
+
+        System.out.println("After task1 completion: " + task1.isAlive());
+        System.out.println("Main thread continues execution.");
+    }
+}
+```
+## Output:
+1[Output for 7c](
