@@ -960,7 +960,7 @@ class TestDaemon{
 }
 ```
 ## Output:
-![Output for 8a](
+![Output for 8a](https://github.com/MEENUGA-VISHNUPRIYA/java-lab-cseg-5en/blob/39c5a28d667c28d5644e4f525fb786032d8ff196/8a.png)
 ## Title:8b(Producer Consumer problem )
 ```
  class Buffer {
