@@ -878,7 +878,7 @@ class GoodMorningThread extends Thread {
          }
 ```
 ## Output:
-![Output for 7b](
+![Output for 7b](https://github.com/MEENUGA-VISHNUPRIYA/java-lab-cseg-5en/blob/6472d34b0b1a4c3d02765ca13924a4f13815207f/7b.png)
 ## Title:7c(Illustrating isAlive() and join())
 ```
 class LongRunningTask extends Thread {
