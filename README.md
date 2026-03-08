@@ -788,3 +788,39 @@ class PerfectNumber
 ```
 ## Output:
 ![Output for addexp-4](https://github.com/MEENUGA-VISHNUPRIYA/java-lab-cseg-5en/blob/19da4419e7fbad610e258322fe87976a1565a551/addexp-4.png)
+## Title:7a(User Defined Exception)
+```
+class InvalidCountryException extends Exception {
+          InvalidCountryException() {
+              super();
+              }
+              InvalidCountryException(String message) {
+              super(message);
+              }
+            }
+class UserRegion {
+
+    void registerUser(String userName, String userCountry) throws InvalidCountryException {
+
+        if (!userCountry.equals("India")) {
+            throw new InvalidCountryException("User outside India cannot be registered");
+        } else {
+            System.out.println("User registration done successfully");
+        }
+    }
+
+    public static void main(String args[]) {
+
+        UserRegion ur = new UserRegion();
+
+        try {
+            ur.registerUser("Ravi", "USA");
+        }
+        catch (InvalidCountryException e) {
+            System.out.println(e.getMessage());
+        }
+    }
+}
+```
+## Output:
+![Output for 7a](
