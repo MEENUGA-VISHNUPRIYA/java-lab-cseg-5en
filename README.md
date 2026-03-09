@@ -920,7 +920,7 @@ public class ThreadDemo {
 }
 ```
 ## Output:
-1[Output for 7c](https://github.com/MEENUGA-VISHNUPRIYA/java-lab-cseg-5en/blob/e6ddad051eed84e95c1d2f0bdef674c77bdea020/7c.png)
+![Output for 7c](https://github.com/MEENUGA-VISHNUPRIYA/java-lab-cseg-5en/blob/e6ddad051eed84e95c1d2f0bdef674c77bdea020/7c.png)
 ## Title:8a(Illustrating Daemon Threads)
 ```
 class DaemonThread extends Thread {
