@@ -1175,4 +1175,4 @@ class Cricket
 }
 ```
 ## Output:
-![Output for 5](
+![Output for 5](https://github.com/MEENUGA-VISHNUPRIYA/java-lab-cseg-5en/blob/a99c0e8e11d0511c7066799e9c6089d9dae06f1e/addexp-5.png)
