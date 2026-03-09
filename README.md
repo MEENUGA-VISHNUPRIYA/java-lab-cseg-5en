@@ -1223,4 +1223,4 @@ class Person extends Thread {
 }
 ```
 ## Output:
-![Output for 11](
+![Output for 11](https://github.com/MEENUGA-VISHNUPRIYA/java-lab-cseg-5en/blob/af7bf811e805a221f6c2c6030d1315ba6bc6ab94/11.png)
