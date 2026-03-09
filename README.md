@@ -1,4 +1,4 @@
-# java-lab-cseg-5en
+<img width="533" height="526" alt="image" src="https://github.com/user-attachments/assets/774a61d6-ea67-4e5c-a07f-c241fc1a1afa" /># java-lab-cseg-5en
 experiments
 ## Experiment 1
 ## Title:1a(Implement Default Primitive Type)
@@ -1176,3 +1176,51 @@ class Cricket
 ```
 ## Output:
 ![Output for 5](https://github.com/MEENUGA-VISHNUPRIYA/java-lab-cseg-5en/blob/a99c0e8e11d0511c7066799e9c6089d9dae06f1e/addexp-5.png)
+## Title:11(Railway Reservation)
+```
+class Reservation {
+    private int availableBerths;
+    Reservation(int berths) {
+        this.availableBerths = berths;
+    }
+    public synchronized void bookTicket(String name, int requestedBerths) {
+        System.out.println(name + " is requesting " + requestedBerths + " berths.");
+        if (requestedBerths <= availableBerths) {
+            System.out.println("Berths available. Booking for " + name);
+            availableBerths -= requestedBerths;
+            System.out.println("Ticket booked for " + name);
+            System.out.println("Remaining berths: " + availableBerths);
+        } else {
+            System.out.println("No berths available for " + name);
+        }
+        System.out.println("--------------------------------");
+    }
+}
+class Person extends Thread {
+    private Reservation reservation;
+    private String personName;
+    private int berthsNeeded;
+    Person(Reservation reservation, String name, int berths) {
+        this.reservation = reservation;
+        this.personName = name;
+        this.berthsNeeded = berths;
+    }
+    public void run() {
+        reservation.bookTicket(personName, berthsNeeded);
+    }
+}
+ public class RailwayReservation {
+    public static void main(String[] args) {
+        Reservation reservation = new Reservation(5);
+        Person p1 = new Person(reservation, "Vishnu", 2);
+        Person p2 = new Person(reservation, "Siri", 3);
+        Person p3 = new Person(reservation, "Neha", 2);
+        p1.start();
+        p2.start();
+        p3.start();
+
+   }
+}
+```
+## Output:
+![Output for 11](
