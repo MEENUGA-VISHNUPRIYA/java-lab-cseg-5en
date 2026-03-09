@@ -1,4 +1,4 @@
-<img width="533" height="526" alt="image" src="https://github.com/user-attachments/assets/774a61d6-ea67-4e5c-a07f-c241fc1a1afa" /># java-lab-cseg-5en
+# java-lab-cseg-5en
 experiments
 ## Experiment 1
 ## Title:1a(Implement Default Primitive Type)
