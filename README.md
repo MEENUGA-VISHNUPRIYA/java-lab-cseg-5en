@@ -1064,7 +1064,7 @@ public class ProducerConsumerDemo {
 }
 ```
 ## Output:
-![Output for 8b](
+![Output for 8b](https://github.com/MEENUGA-VISHNUPRIYA/java-lab-cseg-5en/blob/1110fd0f164ff1f1af020a0f63da29bf248b4f55/8b.png)
 ## Title:8c(Import and use the user defined packages)
 ```
 package arithmetic;
