@@ -1098,7 +1098,7 @@ class Calculate {
 }
 ```
 ## Output:
-![Output for 8c](
+![Output for 8c](https://github.com/MEENUGA-VISHNUPRIYA/java-lab-cseg-5en/blob/53a98d539c2777498814f0616e1ca63ee14f85a1/8c.png)
 ## Title:Additional Experiment:5
 ```
 import java.util.Scanner;
